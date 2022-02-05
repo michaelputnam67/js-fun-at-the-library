@@ -57,6 +57,7 @@ function saveReview(newReview, reviews) {
 
 
 
+
 function calculatePageCount(bookTitle) {
   var bookPageCount = bookTitle.length * 20;
   return bookPageCount;
