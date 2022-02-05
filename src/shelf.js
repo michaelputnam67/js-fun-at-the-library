@@ -26,12 +26,33 @@ function listTitles(bookShelf) {
   var titles = ''
   for (var i = 0; i < bookShelf.length; i++) {
     if (i < bookShelf.length - 1) {
-      titles = titles + `${bookShelf[i].title}, `;
+      titles += bookShelf[i].title + ', ';
     } else {
-      titles = titles + `${bookShelf[i].title}`;
+      titles += bookShelf[i].title;
     }
   } return titles
 }
+
+
+
+// function listTitles(bookShelf) {
+//   var titles = ""
+//   for (var i = 0; i < bookShelf.length; i++) {
+//     titles += bookShelf[i].title + ', '
+//   }
+//   return titles
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 function searchShelf(sciFiShelf, book) {

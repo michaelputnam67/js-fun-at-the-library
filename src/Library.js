@@ -1,7 +1,7 @@
 
 
 function createLibrary(nameLibrary) {
-  var goldenLibrary = {
+  var library = {
     name: nameLibrary,
     shelves: {
       fantasy: [],
@@ -9,9 +9,9 @@ function createLibrary(nameLibrary) {
       nonFiction: []
     }
   };
-  return goldenLibrary
+  return library
 }
-
+createLibrary()
 
 // I need to take the book dracula and add it to the array
 // fantasy in the object shelves within the denverLibrary.
@@ -23,7 +23,7 @@ function addBook(library, book) {
     library.shelves.nonFiction.push(book);
   } else if(book.genre === 'fiction') {
     library.shelves.fiction.push(book);
-  }
+  } 
 }
 
 // I need to
